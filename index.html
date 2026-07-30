@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe — Go Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-logo">~/luxe</div>
+        <div class="nav-links">
+            <a href="#about">about</a>
+            <a href="#services">services</a>
+            <a href="#projects">projects</a>
+            <a href="#console">console</a>
+            <a href="#contact">contact</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="terminal-title">main.go</div>
+                </div>
+                <div class="terminal-body">
+                    <pre><code id="typewriter"></code><span class="cursor"></span></pre>
+                </div>
+            </div>
+            <div class="hero-text">
+                <h1>Luxe</h1>
+                <p class="hero-subtitle">Go Developer</p>
+                <p class="hero-tagline">Telegram bots, parsers, CLI tools & automation.<br>Fast delivery, clean code.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="accent">01.</span> About</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Go developer focused on building practical tools that solve real problems. I specialize in Telegram bots, web scrapers, and network utilities — the kind of software that runs quietly in the background and just works.</p>
+                    <p>Self-taught with hands-on experience in concurrency, raw socket programming, and API integration. I build fast, ship fast, and fix fast.</p>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <span class="highlight-icon">⚡</span>
+                            <span>Production-grade bots with concurrent message handling</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight-icon">🕷</span>
+                            <span>Web parsers with proxy rotation and captcha solving</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight-icon">🔌</span>
+                            <span>Low-level network tools using raw sockets</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight-icon">✨</span>
+                            <span>Clean, maintainable Go code</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="3">0</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="1500">0</span>
+                        <span class="stat-label">Lines of Go</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="1">0</span>
+                        <span class="stat-label">Year Experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title"><span class="accent">02.</span> Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🤖</div>
+                    <h3>Telegram Bot Development</h3>
+                    <p>Custom bots for business automation, notifications, AI integration, shops, and user management. From simple alert bots to complex multi-feature systems with admin panels and payment processing.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🕷</div>
+                    <h3>Web Scraping & Parsers</h3>
+                    <p>Data extraction from websites and APIs. Handles anti-bot measures, proxy rotation, captcha solving, and concurrent processing. Outputs structured data in JSON, CSV, or databases.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⌨</div>
+                    <h3>CLI Tools & Automation</h3>
+                    <p>Command-line utilities for file processing, system monitoring, batch operations, and workflow automation. Built for reliability and ease of use.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔗</div>
+                    <h3>API Integration</h3>
+                    <p>Connecting services together — REST APIs, WebSockets, third-party platforms. Making systems talk to each other efficiently.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>Network Utilities</h3>
+                    <p>Low-level network tools, monitoring daemons, packet analysis. Built with raw sockets and deep understanding of network protocols.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="accent">03.</span> Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-code="func main() {
+    bot := NewBot(token)
+    bot.Handle(&quot;/ai&quot;, aiHandler)
+    bot.Handle(&quot;/shell&quot;, shellHandler)
+    bot.Run()
+}">
+                    <div class="project-overlay">
+                        <pre><code></code></pre>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>bridge</h3>
+                            <span class="project-tag">Telegram AI Bot</span>
+                        </div>
+                        <p>Autonomous Telegram bot running on rooted Android with local LLM inference. Handles commands (/ai, /fix, /shell, /status), executes shell commands with root privileges, monitors system health, and manages a WiFi deauth daemon.</p>
+                        <div class="project-tech">
+                            <span>Go</span>
+                            <span>Telegram API</span>
+                            <span>Local LLM</span>
+                            <span>Android/root</span>
+                        </div>
+                        <div class="project-features">
+                            <span>Concurrent message polling</span>
+                            <span>Local LLM via HTTP API</span>
+                            <span>Root-level system monitoring</span>
+                            <span>Auto log rotation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-code="func (d *Daemon) capturePackets() {
+    fd, _ := syscall.Socket(
+        syscall.AF_PACKET,
+        syscall.SOCK_RAW,
+        htons(ETH_P_ARP),
+    )
+    defer syscall.Close(fd)
+}">
+                    <div class="project-overlay">
+                        <pre><code></code></pre>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>deauthd</h3>
+                            <span class="project-tag">WiFi Security Daemon</span>
+                        </div>
+                        <p>Network security daemon that monitors WiFi clients via raw ARP packet sniffing, maintains a target database with MAC/IP tracking, and sends deauthentication frames to block unauthorized devices.</p>
+                        <div class="project-tech">
+                            <span>Go</span>
+                            <span>Raw Sockets</span>
+                            <span>ARP</span>
+                            <span>Linux</span>
+                        </div>
+                        <div class="project-features">
+                            <span>AF_PACKET socket programming</span>
+                            <span>RWMutex-protected state</span>
+                            <span>Atomic pause/resume</span>
+                            <span>Telegram notifications</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-code="func (w *Worker) run(ctx context.Context) {
+    for mask := range maskCh {
+        result, err := tab.AtomicXHR(mask)
+        if err != nil { continue }
+        dedup.Add(result.Numbers)
+    }
+}">
+                    <div class="project-overlay">
+                        <pre><code></code></pre>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>megafon-parser</h3>
+                            <span class="project-tag">Concurrent Web Scraper</span>
+                        </div>
+                        <p>Concurrent phone number parser using Chrome DevTools Protocol. Features proxy rotation, captcha solving (XEvil, 2captcha), deduplication, and multi-region support.</p>
+                        <div class="project-tech">
+                            <span>Go</span>
+                            <span>CDP</span>
+                            <span>Concurrency</span>
+                            <span>Proxy rotation</span>
+                        </div>
+                        <div class="project-features">
+                            <span>Chrome DevTools Protocol</span>
+                            <span>Multi-threaded workers</span>
+                            <span>Captcha auto-solving</span>
+                            <span>Deduplication engine</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="console" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title"><span class="accent">04.</span> Interactive Console</h2>
+            <p class="console-hint">Type a command and press Enter. Try: <code>help</code>, <code>about</code>, <code>projects</code>, <code>skills</code>, <code>contact</code>, <code>clear</code></p>
+            <div class="console-window">
+                <div class="console-header">
+                    <div class="terminal-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="terminal-title">luxe@portfolio ~ %</div>
+                </div>
+                <div class="console-body" id="console-output">
+                    <div class="console-line">
+                        <span class="console-prompt">luxe@portfolio ~ %</span>
+                        <span class="console-text">Welcome! Type <span class="accent">help</span> to see available commands.</span>
+                    </div>
+                </div>
+                <div class="console-input-line">
+                    <span class="console-prompt">luxe@portfolio ~ %</span>
+                    <input type="text" id="console-input" autocomplete="off" spellcheck="false" autofocus>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="accent">05.</span> Contact</h2>
+            <div class="contact-content">
+                <p class="contact-text">Open to freelance contracts and interesting projects. Let's build something together.</p>
+                <div class="contact-links">
+                    <a href="https://t.me/myocv" class="contact-link" target="_blank">
+                        <span class="contact-icon">✈</span>
+                        <div>
+                            <span class="contact-label">Telegram</span>
+                            <span class="contact-value">@myocv</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/luxesses" class="contact-link" target="_blank">
+                        <span class="contact-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></span>
+                        <div>
+                            <span class="contact-label">GitHub</span>
+                            <span class="contact-value">github.com/luxesses</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="contact-rate">
+                    <span class="rate-label">Rate</span>
+                    <span class="rate-value">$25/hour</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <pre class="gopher-art">
+        .-""""""-.
+      .'          '.
+     /   O      O   \
+    :           `    :
+    |                |
+    :    .------.    :
+     \  '        '  /
+      '.          .'
+        '-......-'
+        </pre>
+        <p class="footer-text">Built with Go spirit. No frameworks were harmed.</p>
+        <p class="footer-copy">&copy; 2026 Luxe</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
