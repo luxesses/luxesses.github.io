@@ -214,6 +214,19 @@ const observer = new IntersectionObserver((entries) => {
 
 statNumbers.forEach(stat => observer.observe(stat));
 
+// === SCROLL REVEAL FOR SECTIONS ===
+const revealSections = document.querySelectorAll('.section');
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1 });
+
+revealSections.forEach(section => revealObserver.observe(section));
+
 // === SMOOTH SCROLL FOR NAV LINKS ===
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', (e) => {
