@@ -1,4 +1,4 @@
-# Portfolio — Luxe
+# Portfolio — luxe
 
 Go Developer portfolio site with interactive console and terminal animations.
 

@@ -16,7 +16,7 @@ const codeLines = [
     { text: '.', color: '#d4d4d4' },
     { text: 'Println', color: '#dcdcaa' },
     { text: '(', color: '#d4d4d4' },
-    { text: '"Hello, I\'m Luxe"', color: '#ce9178' },
+    { text: '"Hello, I\'m luxe"', color: '#ce9178' },
     { text: ')', color: '#d4d4d4' },
     { text: '\n', color: '#d4d4d4' },
     { text: '\tfmt', color: '#d4d4d4' },
